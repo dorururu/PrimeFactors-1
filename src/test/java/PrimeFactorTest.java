@@ -15,17 +15,22 @@ class PrimeFactorTest {
     }
 
     @Test
-    void testPrimeFactor0f1() {
+    void testPrimeFactorOf1() {
         assertEquals(Arrays.asList(), primeFactor.of(1));
     }
 
     @Test
-    void testPrimeFactor0f2() {
+    void testPrimeFactorOf2() {
         assertEquals(Arrays.asList(2), primeFactor.of(2));
     }
 
     @Test
-    void testPrimeFactor0f3() {
+    void testPrimeFactorOf3() {
         assertEquals(Arrays.asList(3), primeFactor.of(3));
+    }
+
+    @Test
+    void testPrimeFactorOf4() {
+        assertEquals(Arrays.asList(2, 2), primeFactor.of(4));
     }
 }
